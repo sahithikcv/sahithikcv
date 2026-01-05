@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahithi Kukkala | Research Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .section-heading { position: relative; padding-bottom: 0.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid #e5e7eb; }
+        .nav-link.active { color: #4338ca; border-bottom: 2px solid #4338ca; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
 
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <span class="font-bold text-xl tracking-tight text-indigo-900 cursor-pointer" onclick="showPage('home')">Sahithi Kukkala</span>
+            <div class="space-x-6 text-sm font-medium flex">
+                <button onclick="showPage('home')" id="nav-home" class="nav-link active py-1 transition">Home</button>
+                <button onclick="showPage('publications')" id="nav-publications" class="nav-link py-1 transition">Publications & Projects</button>
+                <a href="#" class="hover:text-indigo-600 py-1 transition flex items-center gap-1">Resume <i class="fas fa-external-link-alt text-[10px]"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        
+        <!-- PAGE 1: HOME -->
+        <div id="page-home">
+            <!-- Header / About Section -->
+            <section id="about" class="flex flex-col md:flex-row gap-8 items-start mb-20">
+                <div class="flex-1">
+                    <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Sahithi Kukkala</h1>
+                    <p class="text-lg text-indigo-700 font-medium mb-4">Researcher @ Bharat Gen | MS Research @ IIIT Hyderabad</p>
+                    <div class="prose prose-indigo text-gray-600 mb-6">
+                        <p>
+                            I am a Researcher specializing in <strong>Deep Learning & Document Understanding</strong>. My work focuses on high-fidelity layout parsing and structural reconstruction. I have extensive experience training and benchmarking Transformer and CNN architectures for complex document analysis.
+                        </p>
+                        <p>
+                            Currently, I am investigating novel training techniques and specialized loss functions to improve model robustness. I led the development of <strong>IndicDLP</strong>, a foundational resource featuring over 121K+ manually annotated images across 11 Indian languages.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 text-gray-500">
+                        <a href="mailto:k.sahithi2002@gmail.com" class="hover:text-indigo-600 flex items-center gap-1"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="https://linkedin.com/in/sahithi-kukkala-143a70196" target="_blank" class="hover:text-indigo-600 flex items-center gap-1"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#" class="hover:text-indigo-600 flex items-center gap-1"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="w-48 h-48 rounded-2xl bg-indigo-100 overflow-hidden flex-shrink-0 border-4 border-white shadow-lg">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sahithi" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="mb-20">
+                <h2 class="section-heading text-2xl font-bold text-gray-900">Research Experience</h2>
+                <div class="space-y-8">
+                    <div class="relative pl-6 border-l-2 border-indigo-100">
+                        <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-indigo-500 rounded-full"></div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-lg text-gray-900">AI Researcher</h3>
+                            <span class="text-sm font-medium text-gray-500">Jan 2025 - Present</span>
+                        </div>
+                        <p class="text-indigo-600 font-medium text-sm mb-2 uppercase tracking-wide">Bharat Gen, Hyderabad</p>
+                        <ul class="text-sm text-gray-600 space-y-2 list-disc ml-4">
+                            <li>Optimizing distributed parallelization for vLLM inference layers to process 600K+ pages.</li>
+                            <li>Engineering core OCR modules for Patram-7B-Instruct (VLM) document understanding.</li>
+                        </ul>
+                    </div>
+
+                    <div class="relative pl-6 border-l-2 border-indigo-100">
+                        <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-indigo-500 rounded-full"></div>
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-lg text-gray-900">Graduate Researcher</h3>
+                            <span class="text-sm font-medium text-gray-500">July 2023 - Present</span>
+                        </div>
+                        <p class="text-indigo-600 font-medium text-sm mb-2 uppercase tracking-wide">CVIT, IIIT Hyderabad</p>
+                        <p class="text-sm text-gray-600 mb-2 italic">Advised by Prof. Ravi Kiran Sarvadevabhatla</p>
+                        <ul class="text-sm text-gray-600 space-y-2 list-disc ml-4">
+                            <li>Engineered the SOTA layout parsing pipeline by benchmarking YOLO/RODLA/DINO architectures.</li>
+                            <li>Delivered pre-trained model weights that demonstrated a 2.8 mAP boost on downstream datasets.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="mb-20">
+                <h2 class="section-heading text-2xl font-bold text-gray-900">Education</h2>
+                <div class="grid gap-6">
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="font-bold text-gray-900">IIIT Hyderabad</h3>
+                            <p class="text-sm text-gray-600">MS by Research in ECE</p>
+                        </div>
+                        <span class="text-sm text-gray-500">2023 - Present</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="font-bold text-gray-900">IIT (ISM) Dhanbad</h3>
+                            <p class="text-sm text-gray-600">B.Tech in ECE | CGPA: 8.33</p>
+                        </div>
+                        <span class="text-sm text-gray-500">2019 - 2023</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE 2: PUBLICATIONS & PROJECT PAGE -->
+        <div id="page-publications" class="hidden">
+            <h1 class="text-3xl font-extrabold text-gray-900 mb-8">Publications & Research Projects</h1>
+
+            <!-- Project Page Style Section (Featured) -->
+            <section class="mb-16 p-8 bg-white border border-gray-200 rounded-3xl shadow-sm">
+                <div class="mb-6">
+                    <span class="text-indigo-600 font-bold tracking-widest text-xs uppercase">Featured Project</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2">IndicDLP: A Foundational Dataset for Document Layout Parsing</h2>
+                    <p class="text-gray-500 mt-2 italic">Published at ICDAR 2025 (Best Student Paper Runner-up)</p>
+                </div>
+
+                <!-- Teaser Image -->
+                <div class="w-full h-64 bg-gray-100 rounded-xl mb-8 flex items-center justify-center border border-dashed border-gray-300 overflow-hidden">
+                    <!-- Replace with actual project teaser image -->
+                    <div class="text-center p-4">
+                        <i class="fas fa-project-diagram text-4xl text-gray-300 mb-2"></i>
+                        <p class="text-gray-400 text-sm italic">[Project Teaser Image: Dataset Overview]</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="md:col-span-2">
+                        <h3 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider">Abstract</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            IndicDLP is the largest manual layout dataset for document understanding in Indian languages. It contains over 121K+ images, 42 region labels, and 12 domains across 11 languages plus English. Our work establishes new baselines for multilingual robustness in layout parsing and structural reconstruction.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-gray-900 mb-2 uppercase text-xs tracking-wider">Resources</h3>
+                        <div class="flex flex-col gap-2">
+                            <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm font-medium hover:bg-indigo-700 transition">
+                                <i class="fas fa-file-pdf"></i> Read Paper
+                            </a>
+                            <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg text-sm font-medium hover:bg-black transition">
+                                <i class="fab fa-github"></i> Code & Models
+                            </a>
+                            <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-amber-500 text-white rounded-lg text-sm font-medium hover:bg-amber-600 transition">
+                                <i class="fas fa-database"></i> Access Dataset
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-8 border-t border-gray-100">
+                    <h3 class="font-bold text-gray-900 mb-3 uppercase text-xs tracking-wider">BibTeX</h3>
+                    <pre class="bg-gray-50 p-4 rounded-lg text-[10px] text-gray-500 overflow-x-auto">
+@inproceedings{nath2025indicdlp,
+  title={IndicDLP: A Foundational Dataset for Multi-lingual and Multi-domain Document Layout Parsing},
+  author={Nath, Om and Kukkala, Sahithi and Sarvadevabhatla, Ravi Kiran},
+  booktitle={Proceedings of the International Conference on Document Analysis and Recognition (ICDAR)},
+  year={2025}
+}</pre>
+                </div>
+            </section>
+
+            <!-- Other Publications -->
+            <section>
+                <h2 class="section-heading text-xl font-bold text-gray-900">Additional Publications</h2>
+                <div class="space-y-6">
+                    <div class="p-5 hover:bg-white hover:shadow-md transition rounded-2xl border border-transparent hover:border-gray-100">
+                        <h3 class="font-bold text-gray-900">VFDR-Bench: A Multilingual, Multidomain Benchmark for Visually Faithful Document Reconstruction</h3>
+                        <p class="text-sm text-gray-500 mt-1">Submitted to IJDAR (Under Review, 2025)</p>
+                        <div class="mt-3 flex gap-4 text-xs font-semibold text-indigo-600">
+                            <a href="#" class="hover:underline">Abstract</a>
+                            <a href="#" class="hover:underline">Benchmark Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex justify-center gap-6 mb-4 text-gray-400">
+                <a href="#" class="hover:text-indigo-600"><i class="fab fa-github text-xl"></i></a>
+                <a href="#" class="hover:text-indigo-600"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="hover:text-indigo-600"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+            <p class="text-xs text-gray-400">© 2026 Sahithi Kukkala • Built for research visibility.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.getElementById('page-home').classList.add('hidden');
+            document.getElementById('page-publications').classList.add('hidden');
+            
+            // Remove active state from nav
+            document.getElementById('nav-home').classList.remove('active');
+            document.getElementById('nav-publications').classList.remove('active');
+            
+            // Show requested page
+            document.getElementById('page-' + pageId).classList.remove('hidden');
+            document.getElementById('nav-' + pageId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
